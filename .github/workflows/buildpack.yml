@@ -11,9 +11,9 @@ jobs:
     - uses: actions/checkout@master
     - name: login
       uses: "actions/docker/login@master"
-      secrets:
-      - ${{ secrets.DockerUsername }}
-      - ${{ secrets.DockerPassword }}
+      env:
+       DOCKER_USERNAME: ${{ secrets.DockerUsername }}
+       DOCKER_PASSWORD: ${{ secrets.DockerPassword }}
     - name: build
       uses: crswty/buildpack-action@master
     
