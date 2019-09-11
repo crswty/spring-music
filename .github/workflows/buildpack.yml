@@ -9,11 +9,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@master
-    - name: login
+    - name: docker-login
       uses: "actions/docker/login@master"
       env:
        DOCKER_USERNAME: ${{ secrets.DockerUsername }}
        DOCKER_PASSWORD: ${{ secrets.DockerPassword }}
     - name: build
       uses: crswty/buildpack-action@master
-    
+      with:
+        args:
+          PUBLISH: true
+
