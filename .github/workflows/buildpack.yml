@@ -16,7 +16,6 @@ jobs:
        DOCKER_PASSWORD: ${{ secrets.DockerPassword }}
     - name: build
       uses: crswty/buildpack-action@master
-      with:
-        args:
-          PUBLISH: true
+      env:
+        PUBLISH: true
 
