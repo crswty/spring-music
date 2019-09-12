@@ -18,4 +18,5 @@ jobs:
       uses: crswty/buildpack-action@master
       env:
         PUBLISH: true
+        IMAGE_NAME: crswty/spring-music:latest
 
