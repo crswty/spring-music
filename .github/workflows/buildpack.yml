@@ -15,7 +15,7 @@ jobs:
       uses: crswty/buildpack-action@pr1
       env:
         IMAGE_NAME: crswty/spring-music:latest
-        VARS: SERVER_PORT=8090 TEST=hi
+        VARS: db=mysql env=dev
     - name: docker-push
       run: docker push crswty/spring-music:latest
 
