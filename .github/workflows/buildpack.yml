@@ -12,7 +12,7 @@ jobs:
     - name: docker-login
       run: echo "${{ secrets.DockerPassword }}" | docker login -u "${{ secrets.DockerUsername }}" --password-stdin
     - name: build
-      uses: crswty/buildpack-action@master
+      uses: crswty/buildpack-action@pr1
       env:
         PUBLISH: true
         IMAGE_NAME: crswty/spring-music:latest
