@@ -8,13 +8,6 @@
     },
     {
         "_class": "org.cloudfoundry.samples.music.domain.Album",
-        "artist": "The Beach Boys",
-        "title": "Pet Sounds",
-        "releaseYear": "1966",
-        "genre": "Rock"
-    },
-    {
-        "_class": "org.cloudfoundry.samples.music.domain.Album",
         "artist": "Marvin Gaye",
         "title": "What's Going On",
         "releaseYear": "1971",
