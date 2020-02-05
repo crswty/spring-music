@@ -15,7 +15,7 @@
     },
     {
         "_class": "org.cloudfoundry.samples.music.domain.Album",
-        "artist": "Jimi Hendrix Experience",
+        "artist": "Jimi Hendrixa Experience",
         "title": "Are You Experienced?",
         "releaseYear": "1967",
         "genre": "Rock"
