@@ -15,4 +15,6 @@ jobs:
       uses: crswty/buildpack-action@pr1
       env:
         IMAGE_NAME: crswty/spring-music:latest
+    - name: docker-push
+      run: docker push crswty/spring-music:latest
 
