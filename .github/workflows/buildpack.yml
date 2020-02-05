@@ -13,7 +13,7 @@ jobs:
       env:
        DOCKER_USERNAME: ${{ secrets.DockerUsername }}
        DOCKER_PASSWORD: ${{ secrets.DockerPassword }}
-      run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+      run: echo ${{ secrets.DockerPassword }} docker login -u $DOCKER_USERNAME --password-stdin
     - name: build
       uses: crswty/buildpack-action@master
       env:
