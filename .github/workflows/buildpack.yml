@@ -10,10 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: docker-login
-      env:
-       DOCKER_USERNAME: ${{ secrets.DockerUsername }}
-       DOCKER_PASSWORD: ${{ secrets.DockerPassword }}
-      run: echo ${{ secrets.DockerPassword }} | docker login -u $DOCKER_USERNAME --password-stdin
+      run: echo ${{ secrets.DockerPassword }} | docker login -u ${{ secrets.DockerUsername }} --password-stdin
     - name: build
       uses: crswty/buildpack-action@master
       env:
